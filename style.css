@@ -1,0 +1,41 @@
+body{
+    background-color: rgb(31, 31, 31);
+    margin: 0;
+}
+nav{
+    background-color: rgb(157, 0, 255);
+    position: fixed;
+    min-width: 20%;
+    height: 100%;
+    text-align: center;
+}
+.nav-items{
+    padding-top: 300px;
+
+}
+.nav-items a{
+    font-size: 2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;   
+    color: white;
+    display:flex;
+    padding-left: 25%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 2vh;
+    transition: 500ms;
+}
+.nav-items a:hover{
+    background-color: white;
+    color: black;
+    transition: 500ms;
+}
+@media only screen and (max-width: 800px) {
+    nav{
+        min-width: 30%;
+    }
+    .nav-items a{
+        font-size: 3vw;
+    }
+  }
