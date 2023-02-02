@@ -10,7 +10,7 @@ nav{
     text-align: center;
 }
 .nav-items{
-    padding-top: 50%;
+    padding-top: 300px;
 
 }
 .nav-items a{
@@ -31,3 +31,11 @@ nav{
     color: black;
     transition: 500ms;
 }
+@media only screen and (max-width: 800px) {
+    nav{
+        min-width: 30%;
+    }
+    .nav-items a{
+        font-size: 3vw;
+    }
+  }
