@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(238, 238, 238);
+}
+nav{
+    background-color: rgb(36, 35, 35);
+}
+.nav-item a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+}
+nav .active{
+    background-color: rgb(89, 0, 255);
+    border-radius: 5px;
+}
+.custom-shape-divider-top-1677618414 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1677618414 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 182px;
+}
+
+.custom-shape-divider-top-1677618414 .shape-fill {
+    fill: #242323;
+}
+section{
+    background-color:#242323;
+    height: 400px;
+}
+section img{
+    width: 20%;
+    position: relative;
+    left: 40%;
+    top: 15%;
+}
