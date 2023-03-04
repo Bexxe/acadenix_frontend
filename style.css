@@ -1,0 +1,115 @@
+body{
+    background-color: rgb(238, 238, 238);
+}
+nav{
+    background-color: rgb(36, 35, 35);
+}
+.nav-item a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 17px;
+}
+nav .active{
+    background-color: rgb(89, 0, 255);
+    border-radius: 5px;
+}
+.custom-shape-divider-top-1677618414 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1677618414 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 182px;
+}
+
+.custom-shape-divider-top-1677618414 .shape-fill {
+    fill: #242323;
+}
+section{
+    background-color:#242323;
+    height: 400px;
+}
+section img{
+    width: 20%;
+    position: relative;
+    left: 40%;
+    top: 15%;
+}
+section form input[type='text']{
+    width: 20vw;
+    height:  2.7vw;
+    padding: 1.3vw;
+    position: absolute;
+    top: 340px;
+    font-size: 0.7vw;
+    right: 48.7%;
+    color: black;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   section form input:focus{
+       outline-color: rgb(89, 0, 255);
+       outline-offset: -1px;
+   }
+   section form input[type='submit']{
+       width: 6vw;
+       height: 2.7vw;
+       background-color: white;
+       color: black;
+       border: none;
+       font-size: 0.7vw;
+       position: absolute;
+       top: 340px;
+       right: 26.5%;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   section form input[type='submit']:hover{
+       background-color:rgb(89, 0, 255);
+       color: white;
+       transition: 500ms;
+   
+   }
+   .options {
+    font-size: 0.7vw;
+    position: absolute;
+    top: 340px;
+    right: 32.6%;
+    z-index: 99;
+    cursor: pointer;
+    width: 16vw;
+    min-height: 2.7vw;
+    max-height: 300px;
+    background-color: rgb(250, 250, 250);
+    transition: all 300ms;
+}
+.options.opened {
+    overflow-y: scroll;
+}
+.option {
+    width: 100%;
+    height:  2.7vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    transition: all 300ms;
+}
+.option:hover {
+    background-color: rgb(89, 0, 255);
+    color: white;
+}
+@keyframes showMessage {
+    0%, 100% {right: -255px}
+    10% {right: 0}
+    90% {right: 0;}
+}
