@@ -1,0 +1,17 @@
+.card-slider{
+    display: flex;
+    max-width: 1920px;
+    overflow: scroll;
+}
+.card{
+    margin-right: 20px;
+}
+.btn{
+    background-color: rgb(126, 126, 126);
+    color: white;
+    margin-top: 150px;
+}
+.btn:hover{
+    background-color: rgb(126, 126, 126);
+    color: white;
+}
