@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<input type="file" id="resimYukle" accept="image/*">
+<img id="gosterimAlani" src="#" alt="Seçilen Resim">
+
+</body>
+</html>
+<script>
+  var resimYukle = document.getElementById('resimYukle');
+var gosterimAlani = document.getElementById('gosterimAlani');
+
+resimYukle.addEventListener('change', function(event) {
+  var dosya = event.target.files[0];
+  
+  if (dosya) {
+    var resimOkuyucu = new FileReader();
+    
+    resimOkuyucu.onload = function(e) {
+      gosterimAlani.setAttribute('src', e.target.result);
+    };
+    
+    resimOkuyucu.readAsDataURL(dosya);
+  }
+});
+
+</script>
