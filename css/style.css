@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+nav{
+    height: 100px;
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+}
+.logo img{
+height: 100px;
+width: 100%;
+}
+.nav-item{
+    padding: 5px;
+    margin: 5px;
+    transition: 500ms;
+}
+.nav-item:hover{
+    padding: 5px;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 50px;
+    transition: 500ms;
+}
+.activ{
+    background-color: aliceblue;
+    color: black;
+    border-radius: 50px;
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+font-family: "Jaro", sans-serif;
+}
+.offcanvas-body{
+    background-color: rgb(36, 36, 36);
+}
+.offcanvas-header{
+    background-color: rgb(36, 36, 36);
+}
+.sepet a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+
+.bags{
+    display:inline-flex;
+}
+
+.bag{
+    background-color: rgb(36, 36, 36);
+    position: relative;
+    border-radius: 40px;
+    overflow: hidden; /* Taşmaları gizler */
+
+}
+
+.bag img{
+    border-radius: 40px;
+    width: 95%;
+    height: 90vh;
+}
+
+.bag-text{
+position: absolute;
+bottom: 0%;
+color: #fcfcec;
+display: none;
+font-family: "Jaro", sans-serif;
+text-transform: uppercase;
+font-size: 18px;
+}
+.bags a{
+    text-decoration: none;
+    color: #fcfcec;
+}
+.bag-btn button{
+    border: none;
+    background-color: #fcfcec;
+    width: 35%;
+    padding: 10px;
+    border-radius: 50px;
+    font-family: "Jaro", sans-serif;
+}
+
+.respo-bag-img{
+position: relative;
+}
+
+.respo-bag-img img{
+    width: 100%;
+    height: 90vh;
+}
+.respo-bag-img{
+    position: relative;
+}
+#kahverengiimg{
+    position: absolute;
+    top: 60%;
+    opacity: 1;
+    filter: blur(0px);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    margin-left: 0%;
+}
+#siyahimg{
+    position: absolute;
+    top: 60%;
+    opacity: 0;
+    filter: blur(0px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#beyazimg{
+    position: absolute;
+    top: 60%;
+    opacity: 0;
+    filter: blur(0px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.respo-bag img{
+    width: 100%;
+    height: 50vh;
+}
+@keyframes baggelis{
+    0%{
+        left:100%;
+        opacity: 0;
+        filter: blur(10px);
+        
+    }
+    100%{
+        left:50%;
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+@keyframes baggelis2{
+    0%{
+        margin-left: -100%;
+        opacity: 0;
+        filter: blur(10px);
+    }
+    100%{
+        margin-left: 0%;
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+@keyframes baggidis{
+    0%{
+        right:50%;
+        opacity: 1;
+        filter: blur(10px);
+        margin-rleft: 0%;
+        
+    }
+    100%{
+        right:100%; 
+        opacity: 0;
+        filter: blur(0px);
+        margin-left: -100%;
+    }
+}
+@keyframes baggidis2{
+    0%{
+        left:50%;
+        opacity: 1;
+        filter: blur(10px);
+        
+    }
+    100%{
+        left:100%;
+        opacity: 0;
+        filter: blur(0px);
+    }
+}
+.next-btn button{
+position: absolute;
+bottom: 40%;
+right: 1%;
+background: none;
+border: none;
+font-size: 40px;
+}
+.back-btn button{
+    position: absolute;
+    bottom: 40%;
+   background: none;
+   border: none;
+   font-size: 40px;
+   left: 1%;
+    }
+    .bag-btn-box button{
+        border: none;
+        background-color: #fcfcec;
+        width: 50%;
+        padding: 10px;
+        border-radius: 50px;
+        font-family: "Jaro", sans-serif;
+    }
+    
+
+@keyframes bagtextanimnext {
+    0%{
+        bottom: 0%;
+    }
+    100%{
+        bottom: 10%;
+    }
+}
+@keyframes bagtextanimback{
+    0%{
+        bottom: 10%;
+    }
+    100%{
+        bottom: 0%;
+    }
+}
+.responsive-bags{
+    display: none;
+  }
+@media screen and (max-width: 993px) {
+    /* Tablet ekranlar için CSS */
+  .bags{
+    display: none;
+  }
+  .responsive-bags{
+    display:block;
+  }
+    
+}
