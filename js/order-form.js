@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!isScrolling) {
       isScrolling = true;
       scrollBox.scrollBy({ top: -scrollAmount, left: 0, behavior: "smooth" });
-
+      alert("a");
       // Kaydırma işlemini belirli bir süre sonra tekrar aktif et
       setTimeout(() => { isScrolling = false; checkScrollLimits(); }, 500);
     }
