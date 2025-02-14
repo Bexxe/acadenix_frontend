@@ -25,9 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
   scrollUpBtn.addEventListener("click", function () {
     if (!isScrolling) {
       isScrolling = true;
-      scrollBox.scrollTop -= scrollAmount; // Animasyon kaldırıldı
+      scrollBox.scrollBy({ top: -scrollAmount, left: 0, behavior: "smooth" });
 
-      setTimeout(() => { isScrolling = false; checkScrollLimits(); }, 200);
+      // Kaydırma işlemini belirli bir süre sonra tekrar aktif et
+      setTimeout(() => { isScrolling = false; checkScrollLimits(); }, 500);
     }
   });
 
@@ -35,9 +36,10 @@ document.addEventListener("DOMContentLoaded", function () {
   scrollDownBtn.addEventListener("click", function () {
     if (!isScrolling) {
       isScrolling = true;
-      scrollBox.scrollTop += scrollAmount; // Animasyon kaldırıldı
+      scrollBox.scrollBy({ top: scrollAmount, left: 0, behavior: "smooth" });
 
-      setTimeout(() => { isScrolling = false; checkScrollLimits(); }, 200);
+      // Kaydırma işlemini belirli bir süre sonra tekrar aktif et
+      setTimeout(() => { isScrolling = false; checkScrollLimits(); }, 500);
     }
   });
 });
