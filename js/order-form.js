@@ -17,8 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 300);
   }
 
-  // Sayfa yüklendiğinde sınırları kontrol et
-  checkScrollLimits();
   scrollBox.addEventListener("scroll", checkScrollLimits);
 
   // Yukarı kaydırma butonu
