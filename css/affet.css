@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(38, 38, 38);
+}
+.baslik{
+      font-family: "Montserrat", sans-serif;
+      font-size: 25px;
+      font-weight: 600;
+      color: red;
+      position: relative;
+      top: 300px;
+}
+
+
+.heart {
+    position: relative;
+    top: 200px;
+  width: 100px;
+  height: 90px;
+  position: relative;
+  background: red;
+  transform: rotate(-45deg);
+  animation: pulse 1s infinite;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  width: 100px;
+  height: 90px;
+  position: absolute;
+  background: red;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -50px;
+  left: 0;
+}
+
+.heart::after {
+  left: 50px;
+  top: 0;
+}
+
+@keyframes pulse {
+  0% {
+    transform: rotate(-45deg) scale(1);
+  }
+  25% {
+    transform: rotate(-45deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(-45deg) scale(1);
+  }
+  75% {
+    transform: rotate(-45deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(-45deg) scale(1);
+  }
+}
+.button-item{
+    position: relative;
+    top: 350px;
+}
+.button-item button{
+background-color: red;
+color: white;
+      font-family: "Montserrat", sans-serif;
+      width: 100%;
+      padding: 10px;
+      border-radius: 50px;
+      border: none;
+      
+}
